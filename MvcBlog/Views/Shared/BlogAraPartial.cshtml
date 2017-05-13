@@ -1,0 +1,13 @@
+﻿<h4>Site İçi Arama</h4>
+@using (Html.BeginForm("BlogAra", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="input-group">
+        <input id="Ara" name="Ara" type="text" class="form-control"  value="Aradığınız kelimeyi giriniz..." onfocus="if(this.beenchanged!=true){ this.value = ''}" onblur="if(this.beenchanged!=true) { this.value='Aradığınız kelimeyi giriniz...' }" onchange="this.beenchanged = true;">
+        <span class="input-group-btn">
+            <button class="btn btn-default" value="Ara" type="submit">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </span>
+    </div>
+
+}
